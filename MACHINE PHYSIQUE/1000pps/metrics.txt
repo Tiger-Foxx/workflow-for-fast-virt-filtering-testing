@@ -1,0 +1,18 @@
+# Résultats test 1000pps
+# Durée Snort : 303s
+# Lignes base CSV: 1
+
+# Perf Monitor Base agrégé
+perf_monitor.packets_total:    69345
+latency.total_usecs_sum:      0
+latency.max_usecs:            0
+latency.avg_usecs_per_pkt:    0.00
+
+# Perf Monitor CPU (dernière ligne)
+cpu.user_usec:                1195790
+cpu.sys_usec:                 1069863
+cpu.total_usec:               2265653
+
+# Runtime & débit
+runtime_sec:                  303
+debit_avg_pps:                228.86

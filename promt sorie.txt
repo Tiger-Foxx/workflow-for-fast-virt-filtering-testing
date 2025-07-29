@@ -1,0 +1,209 @@
+je vais recuperer la sortie de la console soucis cette force :
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 rx_bytes: 1954836
+--------------------------------------------------
+codec
+                    total: 31491        (100.000%)
+                    other: 19           (  0.060%)
+                 discards: 4            (  0.013%)
+                      arp: 30387        ( 96.494%)
+                      eth: 31491        (100.000%)
+                    icmp4: 248          (  0.788%)
+                    icmp6: 61           (  0.194%)
+                     ipv4: 689          (  2.188%)
+                     ipv6: 209          (  0.664%)
+            ipv6_hop_opts: 58           (  0.184%)
+                      llc: 187          (  0.594%)
+                      tcp: 13           (  0.041%)
+                      udp: 576          (  1.829%)
+                     vlan: 839          (  2.664%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+appid
+                  packets: 894
+        processed_packets: 894
+           total_sessions: 278
+       service_cache_adds: 17
+             bytes_in_use: 2584
+             items_in_use: 17
+--------------------------------------------------
+arp_spoof
+                  packets: 30387
+--------------------------------------------------
+back_orifice
+                  packets: 532
+--------------------------------------------------
+binder
+              raw_packets: 30593
+                new_flows: 270
+          service_changes: 13
+                 inspects: 30863
+--------------------------------------------------
+detection
+                 analyzed: 31491
+--------------------------------------------------
+perf_monitor
+                  packets: 31285
+--------------------------------------------------
+port_scan
+                  packets: 898
+                 trackers: 238
+--------------------------------------------------
+stream
+                    flows: 270
+             total_prunes: 3
+              idle_prunes: 3
+--------------------------------------------------
+stream_icmp
+                 sessions: 215
+                      max: 215
+                  created: 215
+                 released: 215
+--------------------------------------------------
+stream_tcp
+                 sessions: 2
+                      max: 2
+                  created: 2
+                 released: 2
+                 timeouts: 1
+             instantiated: 1
+                   setups: 2
+            data_trackers: 2
+              segs_queued: 2
+            segs_released: 2
+                 max_segs: 1
+                max_bytes: 36
+--------------------------------------------------
+stream_udp
+                 sessions: 53
+                      max: 53
+                  created: 61
+                 released: 61
+                 timeouts: 8
+              total_bytes: 61294
+--------------------------------------------------
+tcp
+        bad_tcp4_checksum: 4
+--------------------------------------------------
+wizard
+                udp_scans: 53
+                 udp_hits: 13
+               udp_misses: 40
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred
+                  unknown: 25         1          0          0          0          0   
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:03:04
+                  seconds: 184.311453
+
+
+et ensuite je vais rcuperer le fichier metrics.txt sous cette forme :
+
+# Résultats test 1000pps
+# Durée Snort : 184s
+# Lignes base CSV: 1
+
+# Perf Monitor Base agrégé
+perf_monitor.packets_total:    31285
+latency.total_usecs_sum:      0
+latency.max_usecs:            0
+latency.avg_usecs_per_pkt:    0.00
+
+# Perf Monitor CPU (dernière ligne)
+cpu.user_usec:                485576
+cpu.sys_usec:                 424280
+cpu.total_usec:               909856
+
+# Runtime & débit
+runtime_sec:                  184
+debit_avg_pps:                170.03
+
+
+je vais le faire pour 1000 pps , pour 5000 pps et pour 25000 pps en fait 
+
+une fois que je l'aurais fais comme je t'ai dis je vais me servir de ces donnees pour tracer des graphiques.
+
+en fait j'aurais des dossiers dans ce genre :
+├───1000pps
+│       metrics.txt
+│       sortie.txt
+│
+├───25000pps
+│       metrics.txt
+│       sortie.txt
+│
+├───5000pps
+│       metrics.txt
+│       sortie.txt
+
+tu connais le conenu di fichier metrics.txt et celui du fichier sortie.txt (l contient la famuse sortie console pour l'experience que je vais repeter 3 fois en fait).
+
+la sorie console vas noatement me permetre pour chaque pps de tracer un des graphes avec cette partie (histogramme):
+--------------------------------------------------
+codec
+                    total: 31491        (100.000%)
+                    other: 19           (  0.060%)
+                 discards: 4            (  0.013%)
+                      arp: 30387        ( 96.494%)
+                      eth: 31491        (100.000%)
+                    icmp4: 248          (  0.788%)
+                    icmp6: 61           (  0.194%)
+                     ipv4: 689          (  2.188%)
+                     ipv6: 209          (  0.664%)
+            ipv6_hop_opts: 58           (  0.184%)
+                      llc: 187          (  0.594%)
+                      tcp: 13           (  0.041%)
+                      udp: 576          (  1.829%)
+                     vlan: 839          (  2.664%)
+--------------------------------------------------
+Module Statistics
+par exemple avec tous ces trucs la , (je ne sais pas comment on va nommer ce graphe mais ce sera utile).
+
+
+on va aussi par pps ,avir des graphes qui nous montrent les stats de modules pour ces modules ci :
+--------------------------------------------------
+detection
+                 analyzed: 31491
+--------------------------------------------------
+perf_monitor
+                  packets: 31285
+--------------------------------------------------
+port_scan
+                  packets: 898
+                 trackers: 238
+--------------------------------------------------
+stream
+                    flows: 270
+             total_prunes: 3
+              idle_prunes: 3
+--------------------------------------------------
+(le module detection , port_scan, stream)..etc
+
+et biensur le script python vas lire automatiquement ces fichiers textes et extraires les valeurs qui nous interresent et les labels aussi , car en fait ils resterons strcuture ainsi , sur ce point la il n'y a pas a s'inquieter. un exemple de contenu (celui donne plus haut) sera fourni a l'IA chargee d'ecrire le script en fait et comme ca elle pourras faire un code robuste , parfait et capable de lire ces fichiers et recuperer ce ui nous interresse de faon vraiment fiable et securisee avec une bonne gestion des erreurs et des avertissements et des sorties. un bon nommage des figures et des fichiers de graphes , avec meme dans des figures si necessaires , une explication de la figure en question sur la figure.
+
+pareil avec les métriques , on a les debits , on a les runtimes , on peut representer dans un graphes les debits calculees dans un seul graphes on voir les différents debit obtenus pour les différents pps , pareil pour la latence obtenue , et meme un ratio nombre de paquets et temps cpu , et encore pleins d'autres choses qu'on peut obtenir et comprarer, t biensur toujours avoir une valeurs moyenne ou agregee ou meme medianne ou meme tout qu'on va afficher sur les différents graphes , bien nommees et un seul fchier par graphes en fait , on fait bien les choses.
+et apres le tracage de tous les grphes on met les résultats compilees et comprarres des différents debit latence et tout ce qui peut etrre interressant (vu que les runtimes seront différents donc je veux surtout les ratio)  , et meme a la fin avoir une valeur moynne de debit , de latence , ou tout autre chose encore que tu juges interressant.
+
+
+breff tu comprends donc que je vais exeuctuer les tests en suivant mon workflow de test , puis recuperer les sorties et le fchier metrics.txt , je vais ranger dans des dossiers 1000pps .etc , puis faire un script python qui va se metre dans le dossier qui contient ces dossiers , et ce script va parcourir les dossiers de résultats , lire le contenu des fichier recuperer les valeurs et les labels qui y correspondent , tracer les graphes que j'attend dans les dosiers dediees et bien nommes , un script parfait qui fais vraiment bien son travail et robuste.
+
+conaisaant ces informations donc et le cotexte du projet , de ce que sont ces métriques , de ce que je cherches a faire et biensur de ta propositons et tes nombreux ajouts de graphies que l'on peut avoir et de métriques (et ratios ) interressants que l'on peut calculer a partir de ces résultats (et tu diras aussi a l'ia d'en proposer , vu que tu vas bien lui donner tout le contexte elle sauras quoi faire) , 
+
+
+je veux que tu rediges un prompt pour une IA qui sera chargee d'ecrire ce script python en fait , tu devras tout lui expliquer le contexte piur quelle dsache meme d'où vinne ces fichiers , c'est quoi l'IDS qu'on utilise , piurquoi on le fait , breff tout absolument tout comme ca elle comprendra mieux l'esprit du prompt.
+cette IA est plus doue aue toi en codage , mais comme c'est avec toi que j'ai commence le travail je dois encore tout remettre en contexte avec elle pour quelle me fasse le script.
+dans le popt quand il faudra sque tu donnes des exemples de fichers metris.txt m et sortie.txt , laisse les espaces je vais les coler moi mme a ces endroit s concentre toi sur ;l'explication de tout tout pour que le script d'etude quelle fasse soit parfait en fait , tu lui diras mme carrément comment j'obetins ces fichiers tout.
+

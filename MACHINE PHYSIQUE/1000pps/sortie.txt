@@ -1,0 +1,111 @@
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 rx_bytes: 4228030
+--------------------------------------------------
+codec
+                    total: 69682        (100.000%)
+                    other: 30           (  0.043%)
+                 discards: 2            (  0.003%)
+                      arp: 68942        ( 98.938%)
+                      eth: 69682        (100.000%)
+                    icmp4: 3            (  0.004%)
+                    icmp6: 100          (  0.144%)
+                     ipv4: 210          (  0.301%)
+                     ipv6: 193          (  0.277%)
+            ipv6_hop_opts: 92           (  0.132%)
+                      llc: 307          (  0.441%)
+                      tcp: 12           (  0.017%)
+                      udp: 288          (  0.413%)
+                     vlan: 1321         (  1.896%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+appid
+                  packets: 401
+        processed_packets: 401
+           total_sessions: 91
+       service_cache_adds: 11
+             bytes_in_use: 1672
+             items_in_use: 11
+--------------------------------------------------
+arp_spoof
+                  packets: 68942
+--------------------------------------------------
+back_orifice
+                  packets: 227
+--------------------------------------------------
+binder
+              raw_packets: 69279
+                new_flows: 81
+          service_changes: 17
+                 inspects: 69360
+--------------------------------------------------
+detection
+                 analyzed: 69682
+--------------------------------------------------
+perf_monitor
+                  packets: 69345
+--------------------------------------------------
+port_scan
+                  packets: 403
+                 trackers: 74
+--------------------------------------------------
+stream
+                    flows: 81
+             total_prunes: 1
+              idle_prunes: 1
+--------------------------------------------------
+stream_icmp
+                 sessions: 12
+                      max: 12
+                  created: 12
+                 released: 12
+--------------------------------------------------
+stream_tcp
+                 sessions: 2
+                      max: 2
+                  created: 2
+                 released: 2
+                 timeouts: 1
+             instantiated: 2
+                   setups: 2
+             syn_trackers: 1
+            data_trackers: 1
+              segs_queued: 1
+            segs_released: 1
+                     syns: 1
+                 max_segs: 1
+                max_bytes: 36
+--------------------------------------------------
+stream_udp
+                 sessions: 67
+                      max: 67
+                  created: 77
+                 released: 77
+                 timeouts: 10
+              total_bytes: 37285
+--------------------------------------------------
+tcp
+        bad_tcp4_checksum: 2
+--------------------------------------------------
+wizard
+                udp_scans: 67
+                 udp_hits: 17
+               udp_misses: 50
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred
+                  unknown: 29         0          0          0          0          0
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:05:03
+                  seconds: 303.158212
