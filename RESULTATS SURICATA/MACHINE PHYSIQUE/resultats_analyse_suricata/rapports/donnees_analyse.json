@@ -1,0 +1,18 @@
+{
+  "metadata": {
+    "date_analyse": "2025-08-25T16:59:17.023552",
+    "version_script": "2.0"
+  },
+  "statistiques": {
+    "1000": {
+      "debit_moyen": 68.10695187165776,
+      "debit_median": 7.0,
+      "debit_max": 218.0,
+      "debit_min": 0.0,
+      "ecart_type": 92.55454250607274,
+      "cv": 135.8958813492117,
+      "q25": 0.0,
+      "q75": 196.0,
+      "nombre_mesures": 187,
+      "duree_totale": 187,
+      "paquets_totaux": 

@@ -1,0 +1,96 @@
+--------------------------------------------------
+Packet Statistics
+--------------------------------------------------
+daq
+                 rx_bytes: 1403989
+--------------------------------------------------
+codec
+                    total: 23289        (100.000%)
+                    other: 59           (  0.253%)
+                 discards: 127          (  0.545%)
+                      arp: 23           (  0.099%)
+                      eth: 23289        (100.000%)
+                     ipv4: 23148        ( 99.395%)
+                      llc: 59           (  0.253%)
+                      tcp: 23144        ( 99.377%)
+                      udp: 4            (  0.017%)
+--------------------------------------------------
+Module Statistics
+--------------------------------------------------
+appid
+                  packets: 23021
+        processed_packets: 9
+          ignored_packets: 23012
+           total_sessions: 4
+       service_cache_adds: 3
+             bytes_in_use: 456
+             items_in_use: 3
+--------------------------------------------------
+arp_spoof
+                  packets: 23
+--------------------------------------------------
+back_orifice
+                  packets: 2
+--------------------------------------------------
+binder
+              raw_packets: 23153
+                new_flows: 4
+                 inspects: 23157
+--------------------------------------------------
+detection
+                 analyzed: 23289
+--------------------------------------------------
+perf_monitor
+                  packets: 23171
+--------------------------------------------------
+port_scan
+                  packets: 23148
+                 trackers: 7
+--------------------------------------------------
+stream
+                    flows: 4
+--------------------------------------------------
+stream_tcp
+                 sessions: 2
+                      max: 2
+                  created: 2
+                 released: 2
+             instantiated: 2
+                   setups: 2
+            data_trackers: 2
+              segs_queued: 3
+            segs_released: 3
+                 max_segs: 2
+                max_bytes: 88
+--------------------------------------------------
+stream_udp
+                 sessions: 2
+                      max: 2
+                  created: 2
+                 released: 2
+              total_bytes: 206
+--------------------------------------------------
+tcp
+        bad_tcp4_checksum: 125
+--------------------------------------------------
+udp
+        bad_udp4_checksum: 2
+--------------------------------------------------
+wizard
+                udp_scans: 2
+               udp_misses: 2
+--------------------------------------------------
+Appid Statistics
+--------------------------------------------------
+detected apps and services
+              Application: Services   Clients    Users      Payloads   Misc       Referred
+                  unknown: 4          0          0          0          0          0
+--------------------------------------------------
+Summary Statistics
+--------------------------------------------------
+process
+                  signals: 1
+--------------------------------------------------
+timing
+                  runtime: 00:00:59
+                  seconds: 59.059299

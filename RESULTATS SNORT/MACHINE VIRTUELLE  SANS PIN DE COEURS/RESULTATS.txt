@@ -1,0 +1,90 @@
+📋 CONFIGURATION DES TESTS:
+   🎯 Nombre de débits testés: 3
+   🎯 Débits injectés: 1000, 5000, 25000 pps
+   🎯 Durée totale des tests: 183 secondes (3.0 minutes)
+   🎯 Paquets totaux traités: 96,263
+   🎯 Temps CPU total consommé: 2.5 secondes
+
+📊 PERFORMANCES MOYENNES GLOBALES:
+   📈 Débit moyen: 519.55 pps
+   📈 Efficacité débit moyenne: 10.0%
+   📈 Perte moyenne de paquets: 90.0%
+   📈 Latence moyenne: 0.000 µs
+   📈 Charge CPU moyenne: 1.4%
+   📈 Temps CPU moyen par paquet: 27.19 µs/pkt
+   📈 Paquets/sec CPU moyen: 36944 pps
+   📈 Efficacité détection moyenne: 10.1%
+
+🏆 RECORDS DE PERFORMANCE:
+   🥇 RECORD Efficacité débit: 14.4% à 5000 pps
+   🥇 RECORD Efficacité CPU: 39905 pkt/sec à 25000 pps
+   🥇 RECORD Efficacité détection: 14.4% à 5000 pps
+   🥇 RECORD Perte minimale: 85.6% à 5000 pps
+   🥇 RECORD Latence minimale: 0.000 µs à 1000 pps
+
+⚠️  ANALYSE DES PROBLÈMES:
+   🔴 CRITIQUE: Pertes très élevées (>70%) à 1000, 5000, 25000 pps
+   🟠 ATTENTION: Pertes élevées (>50%) à 1000, 5000, 25000 pps
+   🔴 GOULOT NON-CPU: Charge CPU faible mais pertes élevées → Problème réseau/I/O
+   📊 SCALABILITÉ STABLE: Variation de -9.8% entre débits
+
+🔍 ANALYSE DÉTAILLÉE PAR DÉBIT:
+
+   📌 1000 pps - 🟠 PASSABLE (Score: 41.8/100)
+      ├─ 📊 Performance: 126.8 pps mesurés (12.7% efficacité)
+      ├─ ❌ Pertes: 87.3% de paquets perdus
+      ├─ 🕐 Latence: 0.000 µs (max: 0 µs)
+      ├─ ⚡ CPU: 0.4% charge (29.61 µs/pkt)
+      ├─ 🚀 Efficacité CPU: 33771 pkt/sec CPU
+      ├─ 🔍 Détection: 7,595.0 paquets (12.9%)
+      ├─ 🌊 Stream: 4.0 flux (0.1 flux/sec)
+      └─ 📦 Paquets/flux: 1898.8
+
+   📌 5000 pps - 🟠 PASSABLE (Score: 42.9/100)
+      ├─ 📊 Performance: 719.2 pps mesurés (14.4% efficacité)
+      ├─ ❌ Pertes: 85.6% de paquets perdus
+      ├─ 🕐 Latence: 0.000 µs (max: 0 µs)
+      ├─ ⚡ CPU: 1.9% charge (26.91 µs/pkt)
+      ├─ 🚀 Efficacité CPU: 37156 pkt/sec CPU
+      ├─ 🔍 Détection: 45,437.0 paquets (14.4%)
+      ├─ 🌊 Stream: 2.0 flux (0.0 flux/sec)
+      └─ 📦 Paquets/flux: 22718.5
+
+   📌 25000 pps - 🔴 CRITIQUE (Score: 35.2/100)
+      ├─ 📊 Performance: 712.7 pps mesurés (2.9% efficacité)
+      ├─ ❌ Pertes: 97.1% de paquets perdus
+      ├─ 🕐 Latence: 0.000 µs (max: 0 µs)
+      ├─ ⚡ CPU: 1.8% charge (25.06 µs/pkt)
+      ├─ 🚀 Efficacité CPU: 39905 pkt/sec CPU
+      ├─ 🔍 Détection: 43,597.0 paquets (2.9%)
+      ├─ 🌊 Stream: 1.0 flux (0.0 flux/sec)
+      └─ 📦 Paquets/flux: 43597.0
+
+🎯 RECOMMANDATIONS D'OPTIMISATION:
+   💡 PRIORITÉ 1: Optimiser le réseau/I/O (CPU sous-utilisé: 1.4%)
+   💡 PRIORITÉ 2: Configuration Snort sous-optimale (efficacité: 10.0%)
+   💡 RECOMMANDATION: Débit optimal pour production = 5000 pps
+   💡 ESTIMATION: Capacité théorique maximale ≈ 150 pps
+
+📈 MÉTRIQUES TECHNIQUES AVANCÉES:
+   🔧 Ratio User/System CPU moyen: 0.60
+   🔧 Efficacité CPU/Runtime moyenne: 124.70
+   🔧 Paquets par flux moyen: 22738.1
+   🔧 Flux créés par seconde moyen: 0.0
+
+📋 RÉSUMÉ EXÉCUTIF:
+   🎖️  VERDICT: 🔴 PERFORMANCE CRITIQUE
+   🎖️  EFFICACITÉ GLOBALE: 10.0%
+   🎖️  RECOMMANDATION: Révision complète de la configuration requise
+   🎖️  DÉBIT OPTIMAL: 5000 pps
+
+🕐 Analyse générée le: 2025-08-20 19:39:02 UTC
+👤 Utilisateur: theTigerFox
+🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+🎊🎊🎊 ANALYSE ULTIME TERMINÉE AVEC SUCCÈS ! 🎊🎊🎊
+📁 FICHIERS GÉNÉRÉS dans .:
+   🎨 7 histogrammes PNG dans figures/
+   📄 summary_ultimate.csv avec TOUTES les métriques
+   📊 Analyse comparative EXHAUSTIVE affichée ci-dessus
+   🔥 Recommandations d'optimisation personnalisées
