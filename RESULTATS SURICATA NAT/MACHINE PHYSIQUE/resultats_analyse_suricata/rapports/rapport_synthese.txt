@@ -1,0 +1,42 @@
+================================================================================
+RAPPORT DE SYNTHÈSE - ANALYSE DE PERFORMANCE IDS SURICATA
+================================================================================
+
+Date d'analyse: 2025-08-26 12:20:49
+
+RÉSUMÉ EXÉCUTIF
+--------------------
+
+• Meilleure performance: Test 5000 avec 345.85 pkt/s
+• Test le plus stable: Test 1000 (CV: 142.9%)
+
+DÉTAILS PAR TEST
+--------------------
+
+Test 1000 paquets:
+  • Débit moyen: 237.68 pkt/s
+  • Débit médian: 0.00 pkt/s
+  • Écart-type: 339.74 pkt/s
+  • Coefficient de variation: 142.9%
+  • Plage: 0.00 - 732.00 pkt/s
+  • Durée: 188 secondes
+  • Paquets totaux traités: 45308
+
+Test 5000 paquets:
+  • Débit moyen: 345.85 pkt/s
+  • Débit médian: 0.00 pkt/s
+  • Écart-type: 502.20 pkt/s
+  • Coefficient de variation: 145.2%
+  • Plage: 0.00 - 1526.00 pkt/s
+  • Durée: 189 secondes
+  • Paquets totaux traités: 66317
+
+Test 25000 paquets:
+  • Débit moyen: 344.72 pkt/s
+  • Débit médian: 0.00 pkt/s
+  • Écart-type: 497.38 pkt/s
+  • Coefficient de variation: 144.3%
+  • Plage: 0.00 - 1482.00 pkt/s
+  • Durée: 186 secondes
+  • Paquets totaux traités: 65268
+

@@ -1,0 +1,67 @@
+================================================================================
+RAPPORT DE COMPARAISON VM vs MACHINE PHYSIQUE
+ANALYSE DE PERFORMANCE IDS SURICATA
+================================================================================
+
+Date d'analyse: 2025-08-25 21:25:10
+
+RÉSUMÉ EXÉCUTIF
+--------------------
+
+• Performance moyenne VM: 1050.83 pkt/s
+• Performance moyenne PM: 487.23 pkt/s
+• Gain moyen PM vs VM: -53.6%
+
+DÉTAILS PAR TEST
+--------------------
+
+Test @ 1000 paquets/s:
+  VM:
+    • Débit moyen: 132.07 pkt/s
+    • Écart-type: 186.94 pkt/s
+    • Efficacité: 13.2%
+    • CV: 141.5%
+  Machine Physique:
+    • Débit moyen: 68.11 pkt/s
+    • Écart-type: 92.55 pkt/s
+    • Efficacité: 6.8%
+    • CV: 135.9%
+  Comparaison:
+    • Différence absolue: -63.97 pkt/s
+    • Différence relative: -48.4%
+
+Test @ 5000 paquets/s:
+  VM:
+    • Débit moyen: 1530.02 pkt/s
+    • Écart-type: 2172.42 pkt/s
+    • Efficacité: 30.6%
+    • CV: 142.0%
+  Machine Physique:
+    • Débit moyen: 710.46 pkt/s
+    • Écart-type: 1024.40 pkt/s
+    • Efficacité: 14.2%
+    • CV: 144.2%
+  Comparaison:
+    • Différence absolue: -819.55 pkt/s
+    • Différence relative: -53.6%
+
+Test @ 25000 paquets/s:
+  VM:
+    • Débit moyen: 1490.40 pkt/s
+    • Écart-type: 2123.80 pkt/s
+    • Efficacité: 6.0%
+    • CV: 142.5%
+  Machine Physique:
+    • Débit moyen: 683.11 pkt/s
+    • Écart-type: 976.88 pkt/s
+    • Efficacité: 2.7%
+    • CV: 143.0%
+  Comparaison:
+    • Différence absolue: -807.29 pkt/s
+    • Différence relative: -54.2%
+
+CONCLUSIONS
+--------------------
+
+• La VM présente de meilleures performances globales
+• Nombre de tests gagnés - PM: 0, VM: 3

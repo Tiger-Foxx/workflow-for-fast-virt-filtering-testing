@@ -1,0 +1,59 @@
+{
+  "metadata": {
+    "date_analyse": "2025-08-25T17:04:47.554056",
+    "version_script": "2.0"
+  },
+  "statistiques": {
+    "1000": {
+      "debit_moyen": 68.10695187165776,
+      "debit_median": 7.0,
+      "debit_max": 218.0,
+      "debit_min": 0.0,
+      "ecart_type": 92.55454250607274,
+      "cv": 135.8958813492117,
+      "q25": 0.0,
+      "q75": 196.0,
+      "nombre_mesures": 187,
+      "duree_totale": 187,
+      "paquets_totaux": 12900.0
+    },
+    "5000": {
+      "debit_moyen": 710.4623655913979,
+      "debit_median": 5.0,
+      "debit_max": 2729.0,
+      "debit_min": 0.0,
+      "ecart_type": 1024.4034262228315,
+      "cv": 144.18827454288942,
+      "q25": 0.0,
+      "q75": 1956.5,
+      "nombre_mesures": 186,
+      "duree_totale": 186,
+      "paquets_totaux": 133929.0
+    },
+    "25000": {
+      "debit_moyen": 683.1081081081081,
+      "debit_median": 5.0,
+      "debit_max": 2595.0,
+      "debit_min": 0.0,
+      "ecart_type": 976.8819847669226,
+      "cv": 143.00547353660193,
+      "q25": 0.0,
+      "q75": 1940.0,
+      "nombre_mesures": 185,
+      "duree_totale": 185,
+      "paquets_totaux": 127887.0
+    }
+  },
+  "fichiers_generes": {
+    "graphiques": [
+      "evolution/",
+      "distribution/",
+      "comparaison/",
+      "statistiques/"
+    ],
+    "rapports": [
+      "rapport_synthese.txt",
+      "statistiques_detaillees.csv"
+    ]
+  }
+}

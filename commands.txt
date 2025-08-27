@@ -1,3 +1,0 @@
-ssh -i %USERPROFILE%\.ssh\id_rsa_widesys2 admin@131.254.23.28
-
-Carole2078@
